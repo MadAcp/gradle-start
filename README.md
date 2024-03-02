@@ -3,4 +3,4 @@
 gradle clean\
 gradle clean test\
 gradle build\
-gradle run\
+gradle run
