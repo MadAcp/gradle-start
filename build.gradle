@@ -4,15 +4,6 @@ plugins {
 
 repositories {
     mavenCentral()
-    //google()
-    //mavenLocal()
-    /*
-    maven {
-        url = uri("https://tomgregory.com/maven2")
-    }
-    flatDir {
-        dirs("lib")
-    }*/
 }
 
 apply plugin: 'application'
