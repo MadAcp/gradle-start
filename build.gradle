@@ -1,0 +1,33 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+    //google()
+    //mavenLocal()
+    /*
+    maven {
+        url = uri("https://tomgregory.com/maven2")
+    }
+    flatDir {
+        dirs("lib")
+    }*/
+}
+
+apply plugin: 'application'
+mainClassName = 'employee.EmployeeApp'
+
+println 'This is executed during configuration phase'
+task configured {
+    println 'The project is configured'
+}
+
+dependencies {
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    testImplementation 'junit:junit:4.4'
+    implementation 'junit:junit:4.4'
+}
+test {
+    useJUnit()
+}
